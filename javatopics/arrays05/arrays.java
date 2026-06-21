@@ -319,34 +319,166 @@
 //              Array ke first aur last element swap karo.
 // -----------------------------------------------------------------------
 
-import java.util.*;
-public class arrays {
+// import java.util.*;
+// public class arrays {
 
-    public static void main(String[] args) {
-        int i,size;
-        Scanner ob = new Scanner(System.in);
-        System.out.print("Enter the size of array : ");
-        size = ob.nextInt();
-        // create a arrays
-        int[] arr = new int[size];
-        // array ko input le liya hai hamne
-        System.out.print("Enter the Array element : ");
-        for(i=0;i<size;i++){
-            arr[i]=ob.nextInt();
-        }
+//     public static void main(String[] args) {
+//         int i,size;
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
 
-        // int temp = arr[0];
-        // arr[0] = arr[size-1];
-        // arr[size-1] = temp;
+//         // int temp = arr[0];
+//         // arr[0] = arr[size-1];
+//         // arr[size-1] = temp;
 
-        System.out.println(" Array swap : ");
-        for(i=0;i<size;i++){
-            if(arr[0]!=arr[size-1]){
-                int temp = arr[0];
-                arr[0] = arr[size-1];
-                arr[size-1] = temp;
-                 System.out.print(+arr[i] +" ");
-            }
-        }
-    }    
-}
+//         System.out.println(" Array swap : ");
+//         for(i=0;i<size;i++){
+//             if(arr[0]!=arr[size-1]){
+//                 int temp = arr[0];
+//                 arr[0] = arr[size-1];
+//                 arr[size-1] = temp;
+//                  System.out.print(+arr[i] +" ");
+//             }
+//         }
+//     }    
+// }
+
+// second method
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size;
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         int temp = arr[0];
+//         arr[0] = arr[size-1];
+//         arr[size-1] = temp;
+
+//         System.out.println(" Array swap : ");
+//         for(i=0;i<size;i++){
+//            System.out.print(arr[i] +" ");
+//         }
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//             Array me largest aur smallest element ka difference nikalo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         int Max = arr[0];
+//         int smallest = arr[0];      
+//         // System.out.println("Printed Array small number ............");
+//         for(i=0;i<size;i++){
+//            if (arr[i]>Max) {
+//                 Max = arr[i]; 
+//            }
+//            else if(arr[i]<smallest){
+//             smallest = arr[i];
+//            }
+//         }
+//         int sub1 = Max - smallest;
+//         System.out.print("\n Largest no : " +Max +" ");
+//         System.out.print("\n Smallest no : " +smallest +" ");
+//         System.out.print("\n Difference of both no : " +sub1);   
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//              Array me zero kitni baar aaya hai count karo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size,count=0;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         // System.out.println("Printed Positive number : ");
+//         for(i=0;i<size;i++){
+//             if(arr[i]==0){
+//                 // System.out.print(arr[i] +" ");
+//                count +=1;
+//             }
+//         }
+//         System.out.print("\n Count zero number  : " +count);
+        
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//              Array ke sabhi elements ka product nikalo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size,product=1;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         // System.out.println("Printed Positive number : ");
+//         for(i=0;i<size;i++){
+//             product = product*arr[i];
+//         }
+//         System.out.print("Product of given array  : " +product);
+        
+//     }    
+// }
+
