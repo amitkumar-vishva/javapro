@@ -482,3 +482,147 @@
 //     }    
 // }
 
+
+// -----------------------------------------------------------------------
+//             Array me second largest element find karo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         int firstNo = arr[0];
+//         int secondNo = arr[0];
+//         System.out.println("Printed largest number ............");
+//         for(i=0;i<size;i++){
+//            if (arr[i]>firstNo) {
+//                 firstNo = arr[i];
+//            }
+//            else if(arr[i]>secondNo){
+//                 secondNo = arr[i];
+//            }
+//         }
+//         System.out.print("\n First largest number : " +firstNo +" ");
+//         System.out.print("\n second largest number : " +secondNo +" ");
+//     }    
+// }
+
+
+// -----------------------------------------------------------------------
+//             Array me second smallest element find karo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         int firstNo = arr[0];
+//         int secondNo = arr[0];
+//         System.out.println("Printed smallest number ............");
+//         for(i=0;i<size;i++){
+//            if (arr[i]<firstNo) {
+//                 firstNo = arr[i];
+//            }
+//            else if(arr[i]<secondNo){
+//                 secondNo = arr[i];
+//            }
+//         }
+//         System.out.print("\n First smallest number : " +firstNo +" ");
+//         System.out.print("\n second smallest number : " +secondNo +" ");
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//             Array me second largest element find karo.
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,size;
+
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of array : ");
+//         size = ob.nextInt();
+//         // create a arrays
+//         int[] arr = new int[size];
+//         // array ko input le liya hai hamne
+//         System.out.print("Enter the Array element : ");
+//         for(i=0;i<size;i++){
+//             arr[i]=ob.nextInt();
+//         }
+
+//         int firstNo = arr[0];
+//         int secondNo = arr[0];
+//         System.out.println("Printed largest number ............");
+//         for(i=0;i<size;i++){
+//            if (arr[i]>firstNo) {
+//                 firstNo = arr[i];
+//            }
+//            else if(arr[i]>secondNo){
+//                 secondNo = arr[i];
+//            }
+//         }
+//         System.out.print("\n First largest number : " +firstNo +" ");
+//         System.out.print("\n second largest number : " +secondNo +" ");
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//             Array ascending order me sort karo (without built-in sort).
+// -----------------------------------------------------------------------
+
+import java.util.*;
+public class arrays {
+
+    public static void main(String[] args) {
+        int i,size;
+
+        Scanner ob = new Scanner(System.in);
+        System.out.print("Enter the size of array : ");
+        size = ob.nextInt();
+        // create a arrays
+        int[] arr = new int[size];
+        // array ko input le liya hai hamne
+        System.out.print("Enter the Array element : ");
+        for(i=0;i<size;i++){
+            arr[i]=ob.nextInt();
+        }
+
+        int Max = arr[0];
+        System.out.println("Printed Maxmim number ............");
+        for(i=0;i<size;i++){
+           if (arr[i]<Max) {
+                Max = arr[i];
+           }
+        }
+        System.out.print(Max +" ");
+    }    
+}
