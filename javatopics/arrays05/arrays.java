@@ -604,7 +604,6 @@ public class arrays {
 
     public static void main(String[] args) {
         int i,size;
-
         Scanner ob = new Scanner(System.in);
         System.out.print("Enter the size of array : ");
         size = ob.nextInt();
@@ -626,3 +625,187 @@ public class arrays {
         System.out.print(Max +" ");
     }    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Basic Level (1–15)
+
+// Array ke sabhi elements print karo. ok
+// Array ka sum nikalo. ok
+// Array ka average nikalo. ok
+// Array me maximum element find karo. ok
+// Array me minimum element find karo. ok
+// Array me even numbers count karo. ok
+// Array me odd numbers count karo. ok
+// Array me positive numbers count karo.    ok
+// Array me negative numbers count karo.    ok
+// Kisi given number ko search karo (Linear Search).
+// Array ko reverse print karo. ok
+// Array ke first aur last element swap karo.   ok
+// Array me largest aur smallest element ka difference nikalo.  ok
+// Array ke sabhi elements ka product nikalo.   ok
+// Array me zero kitni baar aaya hai count karo.    ok
+
+// Easy-Medium Level (16–30)
+
+// Second largest element find karo. ok
+// Second smallest element find karo.   ok
+// Array ascending order me sort karo (without built-in sort).
+// Array descending order me sort karo.
+// Array me duplicate elements count karo.
+// Duplicate elements print karo.
+// Array me unique elements print karo.
+// Array ke sabhi even elements alag array me store karo.
+// Array ke sabhi odd elements alag array me store karo.
+// Array ko left rotate by 1.
+// Array ko right rotate by 1.
+// Array ko k positions left rotate karo.
+// Array ko k positions right rotate karo.
+// Array me frequency of each element find karo.
+// Check karo array sorted hai ya nahi.
+
+// Medium Level (31–40)
+
+// Third largest element find karo.
+// Third smallest element find karo.
+// Array me missing number find karo (1 to n series).
+// Array me pair find karo jinka sum target ke equal ho.
+// Array ke elements ko reverse karke new array banao.
+// Array merge karo aur sort karo.
+// Do arrays equal hain ya nahi check karo.
+// Common elements between two arrays print karo.
+// Do arrays ka union nikalo.
+// Do arrays ka intersection nikalo.
+
+// Interview-Oriented Level (41–50)
+
+// Array me largest contiguous sum find karo (Kadane's Algorithm).
+// Array me leaders find karo.
+// Array me majority element find karo.
+// Array me first repeating element find karo.
+// Array me first non-repeating element find karo.
+// Array me equilibrium index find karo.
+// Array me subarray ka maximum product find karo.
+// Array ko aise rearrange karo ki positive aur negative alternate aaye.
+// Array me smallest missing positive number find karo.
+// Array me longest consecutive sequence find karo.
+// Challenge Order
+// Practice is order me karo:
+// 1–15 → Warm-up
+// 16–30 → Logic Building
+// 31–40 → DSA Foundation
+// 41–50 → Interview Preparation
