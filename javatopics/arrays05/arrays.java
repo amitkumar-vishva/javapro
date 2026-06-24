@@ -596,34 +596,123 @@
 // }
 
 // -----------------------------------------------------------------------
-//             Array ascending order me sort karo (without built-in sort).
+//            two sum.
 // -----------------------------------------------------------------------
 
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int[] arr = {2,3,4,5,6};
+//         int target = 9;
+//         int i,j;
+//         for(i=0;i<arr.length;i++){
+//             for(j=i+1;j<arr.length;j++){
+//                 if (arr[i]+arr[j] == target) {
+//                     System.out.println(arr[i] + " " + arr[j]);
+//                 }
+//             }
+//         }
+//     }    
+// }
+
+// -----------------------------------------------------------------------
+//             Remove elemets
+// -----------------------------------------------------------------------
+
+// import java.util.*;
+// public class arrays {
+//     public static void main(String[] args) {
+//         int[] arr = {9,8,7,6,5};
+//         for(int i=0;i<arr.length;i++){
+//            if(arr[i]!= 8){
+//                System.out.print(arr[i] +" ");
+//            }
+          
+//         }
+//     }
+// }
+
+// -------------------------------------------------------------------------
+//     Remove duplicate value
+// -------------------------------------------------------------------------
+
+// public class demo {
+//     public static void main(String[] args) {
+//         int[] marks = {92, 90, 78, 92,79};
+//         for(int i=0;i<marks.length;i++){
+//             for(int j=i+1;j<marks.length;j++){
+//                 if(marks[i]==marks[j]){
+//                     System.out.println(marks[i]);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// -----------------------------------------------------------------------
+//             Sort array elements
+// -----------------------------------------------------------------------
 import java.util.*;
 public class arrays {
 
     public static void main(String[] args) {
-        int i,size;
+        int i,j,size1,size2;
         Scanner ob = new Scanner(System.in);
-        System.out.print("Enter the size of array : ");
-        size = ob.nextInt();
-        // create a arrays
-        int[] arr = new int[size];
-        // array ko input le liya hai hamne
-        System.out.print("Enter the Array element : ");
-        for(i=0;i<size;i++){
-            arr[i]=ob.nextInt();
+        System.out.print("Enter the size of first array elements : ");
+        size1 = ob.nextInt();
+
+        System.out.print("Enter the size of second array elements : ");
+        size2 = ob.nextInt();
+
+        int[] arr1 = new int[size1];
+        int[] arr2 = new int[size2];
+        
+        System.out.print("Enter the first element of array : ");
+        for(i=0;i<size1;i++){
+            arr1[i] = ob.nextInt();
         }
 
-        int Max = arr[0];
-        System.out.println("Printed Maxmim number ............");
-        for(i=0;i<size;i++){
-           if (arr[i]<Max) {
-                Max = arr[i];
-           }
+        System.out.print("Enter the second element of array : ");
+        for(i=0;i<size2;i++){
+            arr2[i] = ob.nextInt();
         }
-        System.out.print(Max +" ");
-    }    
+        
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
+
+
+        //  ak merged name ka array bana kar us me dono array ko add kar diya hai
+        int[] merged = new int[size1 + size2];
+
+        i = 0; // arr1 pointer
+        j = 0; // arr2 pointer
+        int k = 0; // merged pointer
+
+        while (i < size1 && j < size2) {
+            if (arr1[i] <= arr2[j]) {
+                merged[k++] = arr1[i++];
+            } else {
+                merged[k++] = arr2[j++];
+            }
+        }
+
+        while (i < size1) {
+            merged[k++] = arr1[i++];
+        }
+
+        while (j < size2) {
+            merged[k++] = arr2[j++];
+        }
+
+        System.out.println("Merged array: " + Arrays.toString(merged));
+
+        
+
+    }
 }
 
 
