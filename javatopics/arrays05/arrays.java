@@ -651,72 +651,153 @@
 // }
 
 // -----------------------------------------------------------------------
-//             Sort array elements
+//             Sort array elements & merge karo
 // -----------------------------------------------------------------------
-import java.util.*;
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,j,size1,size2;
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the size of first array elements : ");
+//         size1 = ob.nextInt();
+
+//         System.out.print("Enter the size of second array elements : ");
+//         size2 = ob.nextInt();
+
+//         int[] arr1 = new int[size1];
+//         int[] arr2 = new int[size2];
+        
+//         System.out.print("Enter the first element of array : ");
+//         for(i=0;i<size1;i++){
+//             arr1[i] = ob.nextInt();
+//         }
+
+//         System.out.print("Enter the second element of array : ");
+//         for(i=0;i<size2;i++){
+//             arr2[i] = ob.nextInt();
+//         }
+        
+
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+//         System.out.println(Arrays.toString(arr1));
+//         System.out.println(Arrays.toString(arr2));
+
+
+//         //  ak merged name ka array bana kar us me dono array ko add kar diya hai
+//         int[] merged = new int[size1 + size2];
+
+//         i = 0; // arr1 pointer
+//         j = 0; // arr2 pointer
+//         int k = 0; // merged pointer
+
+//         while (i < size1 && j < size2) {
+//             if (arr1[i] <= arr2[j]) {
+//                 merged[k++] = arr1[i++];
+//             } else {
+//                 merged[k++] = arr2[j++];
+//             }
+//         }
+
+//         while (i < size1) {
+//             merged[k++] = arr1[i++];
+//         }
+
+//         while (j < size2) {
+//             merged[k++] = arr2[j++];
+//         }
+
+//         System.out.println("Merged array: " + Arrays.toString(merged));
+
+        
+
+//     }
+// }
+
+
+// import java.util.*;
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int i,j,size1,size2;
+//         Scanner ob = new Scanner(System.in);
+//         System.out.print("Enter the first element of array size : ");
+//         size1=ob.nextInt();
+
+//         System.out.print("Enter the second element of array size : ");
+//         size2=ob.nextInt();
+
+//         int[] arr1 = new int[size1];
+//         int[] arr2 = new int[size2];
+//         // ye result array me ham merge array fill karege
+//         int[] result = new int[size1+size2];
+
+//         // first array input le liyea
+//         System.out.print("Enter the first elements : ");
+//         for(i=0;i<size1;i++){
+//             arr1[i]=ob.nextInt();
+//         }
+
+//         System.out.print("Enter the second elements : ");
+//         for(i=0;i<size2;i++){
+//             arr2[i]=ob.nextInt();
+//         }
+
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+
+//         System.out.println(Arrays.toString(arr1));
+//         System.out.println(Arrays.toString(arr2));
+
+//         // merge formula  
+//         for (i = 0; i < size1; i++) {
+//             result[i] = arr1[i];
+//         }
+
+//         for (i = 0; i < size2; i++) {
+//             result[size1 + i] = arr2[i];
+//         }
+
+//         Arrays.sort(result);
+//         System.out.println(Arrays.toString(result));
+
+//     }
+// }
+
+
+// Searching element
+
+// public class arrays {
+
+//     public static void main(String[] args) {
+//         int[] arr = {10,20,30,40,50,60,70};
+//         int target = 60;
+//         boolean found1 = false;
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i]==target){
+//                 found1=true;
+//                 break;
+//             }
+            
+//         }
+//         if(found1){
+//             System.out.println("present");
+//         }
+//         else{
+//             System.out.println("not present");
+//         }
+//     }
+// }
+
 public class arrays {
 
     public static void main(String[] args) {
-        int i,j,size1,size2;
-        Scanner ob = new Scanner(System.in);
-        System.out.print("Enter the size of first array elements : ");
-        size1 = ob.nextInt();
-
-        System.out.print("Enter the size of second array elements : ");
-        size2 = ob.nextInt();
-
-        int[] arr1 = new int[size1];
-        int[] arr2 = new int[size2];
-        
-        System.out.print("Enter the first element of array : ");
-        for(i=0;i<size1;i++){
-            arr1[i] = ob.nextInt();
+        for(int i=1;i<=5;i++){
+            System.out.println("hello ji kese ho sare");
         }
-
-        System.out.print("Enter the second element of array : ");
-        for(i=0;i<size2;i++){
-            arr2[i] = ob.nextInt();
-        }
-        
-
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-        System.out.println(Arrays.toString(arr1));
-        System.out.println(Arrays.toString(arr2));
-
-
-        //  ak merged name ka array bana kar us me dono array ko add kar diya hai
-        int[] merged = new int[size1 + size2];
-
-        i = 0; // arr1 pointer
-        j = 0; // arr2 pointer
-        int k = 0; // merged pointer
-
-        while (i < size1 && j < size2) {
-            if (arr1[i] <= arr2[j]) {
-                merged[k++] = arr1[i++];
-            } else {
-                merged[k++] = arr2[j++];
-            }
-        }
-
-        while (i < size1) {
-            merged[k++] = arr1[i++];
-        }
-
-        while (j < size2) {
-            merged[k++] = arr2[j++];
-        }
-
-        System.out.println("Merged array: " + Arrays.toString(merged));
-
-        
-
     }
 }
-
-
-
 
 
 
