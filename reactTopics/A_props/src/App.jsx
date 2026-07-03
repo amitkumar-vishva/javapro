@@ -76,27 +76,38 @@ export default App;
 // export default App;
 
 
-{/* <div className="container">
-            <Card 
-            image="https://picsum.photos/300/200"
-            name="shivans" 
-            discription="I am a Frontend Developer. I love React and Web Development."
-            />
-            <Card 
-            image= "https://picsum.photos/300/200?2"
-            name="shivkumar"
-            discription="I am a React Developer. I love React and Web Development."
-            />
-            
-            <Card 
-            image= "https://picsum.photos/300/200?3"
-            name="Rohan"
-            discription="I am a React Frontend Developer. I love React and Web Development."
-            />
-        </div> */}
 
 
 
+// import React from "react";
+// import Card from "./Components/Card";
+
+// const App = () =>{
+//     return(
+//         <>
+//             <div className="container">
+//                 <Card 
+//                 image="https://picsum.photos/300/200"
+//                 name="shivans" 
+//                 discription="I am a Frontend Developer. I love React and Web Development."
+//                 />
+//                 <Card 
+//                 image= "https://picsum.photos/300/200?2"
+//                 name="shivkumar"
+//                 discription="I am a React Developer. I love React and Web Development."
+//                 />
+                        
+//                 <Card 
+//                 image= "https://picsum.photos/300/200?3"
+//                 name="Rohan"
+//                 discription="I am a React Frontend Developer. I love React and Web Development."
+//                 />
+//             </div>
+
+//         </>
+//     )
+// }
+// export default App;
 
 
 
