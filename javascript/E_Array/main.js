@@ -79,14 +79,14 @@
 //         find the second largest number
 // -------------------------------------------------------------------
 
-let arr = [];
-// let i=0;
-// let j = 0;
-let size = Number(prompt("Enter the size of array elemets  : "));
+// let arr = [];
+// // let i=0;
+// // let j = 0;
+// let size = Number(prompt("Enter the size of array elemets  : "));
 
-for(let i=0;i<size;i++){
-    arr[i]=Number(prompt("Enter the elemets of arrays  : "));
-}
+// for(let i=0;i<size;i++){
+//     arr[i]=Number(prompt("Enter the elemets of arrays  : "));
+// }
 
 // arr.reverse();
 // console.log(arr);
@@ -106,17 +106,31 @@ for(let i=0;i<size;i++){
 
 // optional
 
-let i=0;
-let j = size - 1;
-while(i!=j){
-    let temp=arr[i];
-    arr[i]=arr[j];
-    arr[j]=temp;
-    i++;
-    j--;
-}
-console.log(arr);
+// let i=0;
+// let j = size - 1;
+// while(i!=j){
+//     let temp=arr[i];
+//     arr[i]=arr[j];
+//     arr[j]=temp;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
 
+
+
+// -------------------------------------------------------------------
+//        Revers array
+// -------------------------------------------------------------------
+
+// let arr = [];
+// let size = Number(prompt("Enter the size of arraya : "));
+// for(let i=0;i<size;i++){
+//     arr[i]=Number(prompt("Enter the element of array : "));
+// }
+// for(let i=size-1;i>=0;i--){
+//     console.log(arr[i]);   
+// }
 
 
 
