@@ -204,6 +204,61 @@ let prompt = require('prompt-sync')();
 //          *     *     *     *  
 //       *     *     *     *     *  
 
+// ----------------------------------------------------------------
+//         Star - 09
+// ----------------------------------------------------------------
+
+// let n = prompt("Enter the number : ")
+// for(let i=1;i<=n;i++){
+//     for(let j=n;j>=i;j--){
+//         process.stdout.write("  ");   
+//     }
+//     for(let k=1;k<=i;k++){
+//         process.stdout.write("* ");
+//     }
+//     for(let l=2;l<=i;l++){
+//         process.stdout.write("* ");
+//     }
+//     process.stdout.write("\n");
+// }
+
+// output :- 
+
+//           * 
+//         * * * 
+//       * * * * * 
+//     * * * * * * * 
+//   * * * * * * * * * 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr = []
+// let i=0
+// let size = prompt("Enter the size of array : ")
+// for(let i=0;i<size;i++){
+//     arr[i]=Number(prompt("Enter the elements of array : "))
+// }
+// for(let i=0;i<size;i++){
+    
+// }
+
+// console.log(arr[i]);
+
+let arr = [1,2,3,4,5];
+let first = arr.shift();
+arr.push(first)
+console.log(arr);
 
 
 
