@@ -157,13 +157,26 @@
 
 // or
 
-let arr = [1, 2, 3, 4, 5]; // ak array ban liya hai
-let first = arr[0];	// index zero ke element ko first me store kar diya hai
-for (let i = 0; i < arr.length - 1; i++) {
-    arr[i] = arr[i + 1];	// index arr[0] par index 1 ki value aa jaye
-}
-arr[arr.length - 1] = first;
+// let arr = [1, 2, 3, 4, 5]; // ak array ban liya hai
+// let first = arr[0];	// index zero ke element ko first me store kar diya hai
+// for (let i = 0; i < arr.length - 1; i++) {
+//     arr[i] = arr[i + 1];	// index arr[0] par index 1 ki value aa jaye
+// }
+// arr[arr.length - 1] = first;
+// console.log(arr);
+
+
+// -------------------------------------------------------------------
+//        change the last postion
+// -------------------------------------------------------------------
+
+let arr = [1,2,3,4,5]
+let result = arr.shift()
+let result02=arr.pop()
+arr.push(result)
+arr.unshift(result02)
 console.log(arr);
+
 
 
 

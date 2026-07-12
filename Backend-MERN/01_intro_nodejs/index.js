@@ -97,3 +97,23 @@
 // how to use nodemon
 
 // "dev":"node index.js" ----> convert -----> "dev":"nodemon index.js" --> then run --> npm run dev
+
+// ---------------------------------------------------------------
+//     .env
+// ---------------------------------------------------------------
+
+// .env file ka use secret aur configuration values store karne ke liye hota hai, jaise:
+// es ko install karne ke liye ---->    npm install dotenv
+
+
+// PORT=5000
+// MONGO_URI=mongodb://localhost:27017/mydatabase
+// JWT_SECRET=mySuperSecretKey
+// NODE_ENV=development
+// CLOUDINARY_API_KEY=your_api_key
+// CLOUDINARY_API_SECRET=your_api_secret
+
+
+//--> jis file me es ko use karna ho    import dotenv from "dotenv";
+                                      //dotenv.config();    ye dono import karna hai es ki help se ham ko (process.env)
+// ye milta hai.
