@@ -82,5 +82,112 @@
 #     fact*=i
 # print(fact) # 120
 
+# ------------------------------------------------------------------------------
+#        1 to 50 tak ke sabhi even and odd number print kare
+# ------------------------------------------------------------------------------
+
+# for i in range(1,51):
+#     if i%2==0:
+#         print(i, end=" ")
+
+# for i in range(1,51):
+#     if i%2!=0:
+#         print(i, end=" ")
+
+# ---------------------------------------------------------------
+#      1 se N tak ke sabhi no ke even ko add karo
+#  ---------------------------------------------------------------
+# sum=0
+# num = int(input("Enter the number : "))
+# for i in range(1,num+1):
+#     if i%2==0:
+#         sum +=i
+# print(sum)
+
+# ---------------------------------------------------------------
+#      kisi bhi number ka square print karo
+#  ---------------------------------------------------------------
+
+# result = 0
+# n=int(input("Enter the any number : "))
+# if n>0 or n<0:
+#     result = (n*n)
+#     print("Square : ",result)
 
 
+# ---------------------------------------------------------------
+#      kisi bhi number ka cube print karo
+#  ---------------------------------------------------------------
+
+# result = 0
+# n=int(input("Enter the any number : "))
+# if n>0:
+#     result = (n*n*n)
+#     print("Cube : ",result)
+# else:
+#     result = (-(n*n*n))
+#     print("Cube : ", result)
+
+
+# ---------------------------------------------------------------
+#      Even no ko count karo
+#  ---------------------------------------------------------------
+
+# count = 0
+# n=int(input("Enter the any number : "))
+# for i in range(1,n+1):
+#     if i%2==0:
+#         count+=1
+# print(count)
+
+# ---------------------------------------------------------------
+#     kisi no ko reverse karo
+#  ---------------------------------------------------------------
+
+# result = 0
+# rev=0
+# n=int(input("Enter the any number : "))
+# while n>0:
+#     z = n%10
+#     rev = (rev*10)+z
+#     n = n//10
+# print(rev)
+
+# ---------------------------------------------------------------
+#      check karo ki no palindrom hai ya nahi
+#  ---------------------------------------------------------------
+# result=0
+# n = int(input("Enter the number : "))
+# temp = n
+# while temp>0:
+#     z = temp%10
+#     result = (result*10)+z
+#     temp = temp//10
+
+# if n==result:
+#     print("Palindrom no")
+# else:
+#     print("Not Palindrom")
+
+# ---------------------------------------------------------------
+#     check karo ki given number prime no hai ya nahi
+#  ---------------------------------------------------------------
+
+n=int(input("Enter the number : "))
+if n<=1:
+    print("Plese, Enter the valid no !")
+else:
+    is_prime = True
+    for i in range(2,n):
+        if n%i==0:
+            is_prime=False
+            break
+    if is_prime:
+        print("Prime no")
+    else:
+        print("Not Prime no")
+
+
+
+    
+    
