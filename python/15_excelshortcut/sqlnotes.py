@@ -248,7 +248,13 @@
 # Level 3 – AND / OR / NOT (41–55)
 
 # IT department aur salary 50000 se zyada.
+
+#----> SELECT * FROM Employee WHERE Department = 'IT' AND Salary > 50000;
+
 # Delhi aur age 30.
+
+#----> SELECT * FROM Employee WHERE AGE = 23 AND CITY = 'DELHI';
+
 # HR ya Finance.
 # Salary >50000 ya Bonus >10000.
 # NOT IT department.
@@ -341,133 +347,6 @@
 # ✅ JOINS → 100 Questions
 # ✅ Subqueries → 50 Questions
 # ✅ Window Functions → 100 Questions
-
-
-# Basic GROUP BY Questions (1–20)
-# Har department mein kitne employees hain?
-# Har city mein kitne employees hain?
-# Har department ki average salary nikalo.
-# Har department ka total salary expense nikalo.
-# Har department ki maximum salary nikalo.
-# Har department ki minimum salary nikalo.
-# Har city ki average salary nikalo.
-# Har city ka total salary expense nikalo.
-# Har age group mein employees ki count nikalo.
-# Har gender ke employees ki count nikalo.
-# Har designation mein employees count karo.
-# Har joining year mein kitne employees join hue?
-# Har month mein kitni sales hui?
-# Har product category ki total sales nikalo.
-# Har product ka total quantity sold nikalo.
-# Har customer ki total purchase nikalo.
-# Har payment method ka usage count nikalo.
-# Har order status ka count nikalo.
-# Har region ki sales calculate karo.
-# Har brand ke products count karo.
-# Intermediate GROUP BY Questions (21–40)
-# Department wise highest salary employee find karo.
-# City wise highest salary find karo.
-# City wise lowest salary find karo.
-# Department wise average age nikalo.
-# Department wise maximum experience nikalo.
-# Employee wise total sales nikalo.
-# Customer wise order count nikalo.
-# Product wise average rating nikalo.
-# Category wise average price nikalo.
-# Month wise revenue nikalo.
-# Year wise total sales nikalo.
-# Employee wise performance calculate karo.
-# Manager wise employee count nikalo.
-# Location wise customer count nikalo.
-# Category wise profit calculate karo.
-# Department wise bonus total nikalo.
-# City wise employee salary comparison karo.
-# Product wise total orders nikalo.
-# Customer wise average order value nikalo.
-# Salesperson wise total revenue nikalo.
-# Advanced GROUP BY Questions (41–50)
-# Sabse zyada revenue wali category find karo.
-# Sabse zyada employees wala department find karo.
-# Highest average salary wala department find karo.
-# Lowest performing sales region find karo.
-# Most profitable product category find karo.
-# Most active customer find karo.
-# Highest selling product find karo.
-# Highest revenue month find karo.
-# Employee performance report banao.
-# Monthly sales summary report banao.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# MODULE 3: HAVING – 30 SQL Practice Questions
-
-
-# HAVING ka use GROUP BY ke baad filter lagane ke liye hota hai.
-# Assume tables:
-
-# employees
-# emp_id	name	department	city	salary
-
-# sales
-# sale_id	product	category	customer_id	amount
-
-# Basic HAVING Questions (1–10)
-
-
-# Un departments ko find karo jahan employees ki count 10 se zyada hai.
-# Un cities ko find karo jahan employees ki count 50 se zyada hai.
-# Un departments ko find karo jahan average salary 50000 se zyada hai.
-# Un cities ko find karo jahan average salary 40000 se zyada hai.
-# Un products ko find karo jinki total sales 1 lakh se zyada hai.
-# Un categories ko find karo jinka total revenue 5 lakh se zyada hai.
-# Un customers ko find karo jinhone 5 se zyada orders kiye hain.
-# Un employees ko find karo jinki total sales 50000 se zyada hai.
-# Un months ko find karo jahan sales 10 lakh se zyada hai.
-# Un departments ko find karo jahan maximum salary 1 lakh se zyada hai.
-
-# Intermediate HAVING Questions (11–20)
-
-# Department wise average salary nikal kar sirf wo departments dikhao jahan average salary 70000 se zyada hai.
-# City wise employee count nikalo aur sirf wo cities dikhao jahan 100 employees se zyada hain.
-# Product wise sales calculate karo aur sirf top selling products dikhao.
-# Category wise profit nikalo aur sirf profitable categories dikhao.
-# Customer wise total purchase nikalo aur sirf high value customers dikhao.
-# Salesperson wise sales nikalo aur jinki sales target se zyada hai unhe dikhao.
-# Department wise average age nikalo aur sirf wo departments dikhao jahan average age 30 se zyada hai.
-# Region wise revenue calculate karo aur sirf bade regions dikhao.
-# Brand wise product count nikalo aur sirf wo brands dikhao jinke products 20 se zyada hain.
-# Payment method wise transaction count nikalo aur sirf popular methods dikhao.
-
-# Advanced HAVING Questions (21–30)
-
-# Wo departments find karo jahan employees ki average salary company average salary se zyada hai.
-# Wo customers find karo jinka total spending average customer spending se zyada hai.
-# Wo products find karo jinka total sales amount average product sales se zyada hai.
-# Wo cities find karo jahan highest number of customers hain.
-# Wo categories find karo jahan total profit maximum hai.
-# Wo employees find karo jinki total sales 5 lakh se zyada hai.
-# Wo months find karo jahan revenue pichle month se zyada hai.
-# Wo departments find karo jahan salary expense 50 lakh se zyada hai.
-# Wo stores find karo jahan average order value 5000 se zyada hai.
-# Ek report banao jisme sirf high-performing departments dikhein.
-
-
-
-
-
-
-
 
 
 

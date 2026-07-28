@@ -1,3 +1,10 @@
+# SELECT-WEHERE
+# GROUP BY
+# HAVING
+# JOIN
+# WINDOW FUNCTION
+# CTE
+
 # -----------------------------------------------------------------------------
 #     hamare pass me kon kon se department hai
 # -----------------------------------------------------------------------------
@@ -58,17 +65,101 @@
 
             # select * from employee where Department = 'HR';
 
+# ------------------------------------------------------------------------------
+#         GROUP BY
+# ------------------------------------------------------------------------------
+
+# Basic GROUP BY Questions (1–20)
 
 
-# ------- PRACTICS QUESTION -----------
-# -------------------------------------------------------------------------------
-# Q1. पूरे Employee table में कितने employees हैं?
-# -------------------------------------------------------------------------------
-    # select count(*) from employee;
+#----> Har department mein kitne employees hain?
 
-# -------------------------------------------------------------------------------
-# Q2. सभी employees की Total Salary निकालो।
-# -------------------------------------------------------------------------------
+    # SELECT DEPARTMENT, COUNT(*) FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> Har city mein kitne employees hain?
+
+    # SELECT CITY, COUNT(*) FROM EMPLOYEE GROUP BY CITY;
+
+#----> Har department ki average salary nikalo.
+
+    # SELECT DEPARTMENT, AVG(SALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> Har department ka total salary nikalo.
+
+    # SELECT DEPARTMENT, SUM(SALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> Har department ki maximum salary nikalo.
+
+    # SELECT * FROM EMPLOYEE AS E WHERE SALARY=(SELECT MAX(SALARY) FROM EMPLOYEE WHERE DEPARTMENT = E.DEPARTMENT);
+
+#----> Har department ki minimum salary nikalo.
+
+    # SELECT DEPARTMENT, MIN(SALARY) FROM EMPLOYEE GROUP BY DEPARTMENT;
+    # SELECT * FROM EMPLOYEE AS E WHERE SALARY=(SELECT MIN(SALARY) FROM EMPLOYEE WHERE DEPARTMENT = E.DEPARTMENT);
+
+
+#----> Har city ki average salary nikalo.
+
+    # SELECT CITY, COUNT(*) FROM EMPLOYEE GROUP BY CITY;
+    # SELECT CITY, AVG(SALARY) FROM EMPLOYEE GROUP BY CITY;
+
+#----> Har city ka total salary expense nikalo.
+
+    # SELECT CITY, SUM(SALARY) FROM EMPLOYEE GROUP BY CITY;
+
+#----> Har age group mein employees ki count nikalo.
+
+    # SELECT AGE, COUNT(*) AS TOTAL_EMPLOYEES FROM EMPLOYEE GROUP BY AGE;
+
+# Har gender ke employees ki count nikalo.
+# Har designation mein employees count karo.
+# Har joining year mein kitne employees join hue?
+# Har month mein kitni sales hui?
+# Har product category ki total sales nikalo.
+# Har product ka total quantity sold nikalo.
+# Har customer ki total purchase nikalo.
+# Har payment method ka usage count nikalo.
+# Har order status ka count nikalo.
+# Har region ki sales calculate karo.
+# Har brand ke products count karo.
+
+
+# Intermediate GROUP BY Questions (21–40)
+
+
+# Department wise highest salary employee find karo.
+# City wise highest salary find karo.
+# City wise lowest salary find karo.
+# Department wise average age nikalo.
+# Department wise maximum experience nikalo.
+# Employee wise total sales nikalo.
+# Customer wise order count nikalo.
+# Product wise average rating nikalo.
+# Category wise average price nikalo.
+# Month wise revenue nikalo.
+# Year wise total sales nikalo.
+# Employee wise performance calculate karo.
+# Manager wise employee count nikalo.
+# Location wise customer count nikalo.
+# Category wise profit calculate karo.
+# Department wise bonus total nikalo.
+# City wise employee salary comparison karo.
+# Product wise total orders nikalo.
+# Customer wise average order value nikalo.
+# Salesperson wise total revenue nikalo.
+# Advanced GROUP BY Questions (41–50)
+# Sabse zyada revenue wali category find karo.
+# Sabse zyada employees wala department find karo.
+# Highest average salary wala department find karo.
+# Lowest performing sales region find karo.
+# Most profitable product category find karo.
+# Most active customer find karo.
+# Highest selling product find karo.
+# Highest revenue month find karo.
+# Employee performance report banao.
+# Monthly sales summary report banao.
+
+
 
 
 
