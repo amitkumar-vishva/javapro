@@ -26,21 +26,66 @@
 
 
 # -------------------------------------------------------------------------------
-#     Data Cleaning and Preparation
+#     Data Cleaning and Preparation (chepter - 03)
 # -------------------------------------------------------------------------------
+# ------ topics -------
+        # Remove duplicates
+        # Remove blank rows
+        # Remove blank space 
+        # Change Case using formula(UPPERCASE,LOWERCASE,PROPER)
+        # Fix negative stock values
+        # Split data
 
-        # ****************** Remove Blank Rows ******************
 
-# ctrl + G = GOTO --> special --> Blank --> ok --> ctrl + (-) 
+# -----------  Remove duplicates value -------------
+
+# SHORT CUT     SELECT TABLE THEN (ALT + A + M)
+# job hi duplicates value hogi bo remove ho jayegi
+
+# DATA --> REMOVE DUPLICATE 
+
+# -----------  Remove blank rows -------------
+
+# ctrl + g(go to) --> spcial --> blank -->  ok
+
+# -----------  Remove blank space -------------
+
+# as pass ke space ko remove karna
 # trim() es ki help se kisi bhi name ka as pass ka space remove kar sakte hai
+# SUBSTITUTE() Use: Jab kisi word ya character ko dusre se replace karna ho.
+# EXAMPLE :- WH188Q12K  -OUTPUT-> HR188Q12K     (=SUBSTITUTE(A2,"WH","HR"))
+# EXAMPLE :-      987-654-3210  -OUTPUT-> 9876543210       (=SUBSTITUTE(C3,"-",""))
+
+# Jab ham kisi col se kisi col ko banate hai tab bha par ham ko (alt+v+v) ka use karte hai
+
 
 # -------------------------------------------------------------------------------
-#     Data validatation
+#     LOGICAL FUNCTION (chepter - 04)
+# -------------------------------------------------------------------------------
+# IF, NESTING IF, 
+# IFS :-  एक से अधिक Conditions।
+# ,AND/OR
+
+# =IFS(
+# A2>=75000,A2*20%,
+# A2>=50000,A2*15%,
+# A2<50000,A2*10%
+# )
+
+# -------------------------------------------------------------------------------
+#               SORT AND FILTER (chepter - 05)
+# -------------------------------------------------------------------------------
+# FILTER LAGANE KE LIYE (ALT + A + T)
+
+# -------------------------------------------------------------------------------
+#               VLOOKUP,MATCH AND INDEX (chepter - 06)
 # -------------------------------------------------------------------------------
 
-# data --> data validation -->
-
 # -------------------------------------------------------------------------------
-#    logical function
+#               STATISTICAL FORMULAS (chepter - 07)
 # -------------------------------------------------------------------------------
-# if, Nesting if, IFS, AND/OR
+# SUMIF | SUMIFS
+# COUNTIF, COUNTIFS
+# AVERAGEIF, AVERAGEIFS
+# MAXIF, MAXIFS
+# MINIF, MINIFS

@@ -4,6 +4,48 @@
 # JOIN
 # WINDOW FUNCTION
 # CTE
+#--------------------------------------------------------------------------------------
+# GROUP BY — Quick Revision
+#--------------------------------------------------------------------------------------
+
+# 1. Kya hai?
+
+    # GROUP BY SQL clause hai jo same values wale rows ko group karta hai.
+
+# 2. Kyun use karte hain?
+
+    # Group-wise summary/result nikalne ke liye.
+
+# 3. Kaise kaam karta hai?
+
+    # Same values → ek group → aggregate function se calculation.
+    # SELECT department, COUNT(*)
+    # FROM employees
+    # GROUP BY department;
+
+# 4. Real-life Example:
+
+    # Employees ko department-wise group karke har department ke employees count karna.
+
+# 5. Kahan use hota hai?
+
+    # Department-wise employees
+    # City-wise customers
+    # Category-wise sales
+    # Month-wise orders
+
+# 6. Main functions:
+
+    # COUNT() | SUM() | AVG() | MAX() | MIN()
+
+# 7. Column change karne par?
+
+    # GROUP BY department → department-wise result
+    # GROUP BY city → city-wise result
+
+# 8. Question kaise identify karein?
+
+    # Question mein “wise / each / per” aaye → GROUP BY check karo.
 
 # -----------------------------------------------------------------------------
 #     hamare pass me kon kon se department hai
@@ -111,7 +153,10 @@
 
     # SELECT AGE, COUNT(*) AS TOTAL_EMPLOYEES FROM EMPLOYEE GROUP BY AGE;
 
-# Har gender ke employees ki count nikalo.
+#-----> Har gender ke employees ki count nikalo.
+
+    # select GENDER, COUNT(*) FROM EMPLOYEE GROUP BY GENDER;
+
 # Har designation mein employees count karo.
 # Har joining year mein kitne employees join hue?
 # Har month mein kitni sales hui?
@@ -127,12 +172,50 @@
 # Intermediate GROUP BY Questions (21–40)
 
 
-# Department wise highest salary employee find karo.
-# City wise highest salary find karo.
-# City wise lowest salary find karo.
-# Department wise average age nikalo.
-# Department wise maximum experience nikalo.
-# Employee wise total sales nikalo.
+#----> Department wise highest salary employee find karo.
+
+    # SELECT DEPARTMENT,MAX(SALARY) AS HIGH_SALARY FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> City wise highest salary find karo.
+
+    # SELECT CITY,MAX(SALARY) AS HIGH_SALARY FROM EMPLOYEE GROUP BY CITY;
+
+#----> City wise lowest salary find karo.
+
+    # SELECT CITY,MIN(SALARY) AS HIGH_SALARY FROM EMPLOYEE GROUP BY CITY;
+
+#----> Department wise average age nikalo.
+
+# SELECT DEPARTMENT,AVG(SALARY) AS HIGH_SALARY FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> Department wise maximum experience nikalo.
+
+    # SELECT DEPARTMENT, MAX(EXPERIENCE) AS MAXMAM_EX FROM EMPLOYEE GROUP BY DEPARTMENT;
+
+#----> Employee wise total sales nikalo.
+
+    # SELECT EMPID,NAME, SUM(SALES) AS TOTAL_SALES FROM EMPLOYEE GROUP BY EMPID,NAME;
+
+#----> Har course mein kitne male aur female students hain?
+
+    # SELECT COURSE, GENDER, COUNT(GENDER) FROM STUDENTSS GROUP BY COURSE,GENDER;
+
+#----> Har city mein kitne BCA students hain?
+
+    # SELECT CITY, COUNT(*) AS BCA_STUDENT FROM STUDENTSS WHERE COURSE = 'BCA' GROUP BY CITY;
+
+#----> Har course ka average age nikalo.
+
+    # SELECT COURSE, AVG(AGE) AS AVG_AGE FROM STUDENTSS GROUP BY COURSE;
+
+#----> Har city ka total marks aur average marks dono nikalo.
+
+    # SELECT CITY, SUM(MARKS) AS TOTAL_MARKS, AVG(MARKS) AS TOTAL_AVG FROM STUDENTSS GROUP BY CITY;
+
+# Har course mein highest marks kitne hain?
+
+# Har gender ka highest aur lowest marks nikalo.
+
 # Customer wise order count nikalo.
 # Product wise average rating nikalo.
 # Category wise average price nikalo.
