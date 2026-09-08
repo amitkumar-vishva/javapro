@@ -89,3 +89,95 @@
 # AVERAGEIF, AVERAGEIFS
 # MAXIF, MAXIFS
 # MINIF, MINIFS
+
+# 1. SUMIF
+# 📌 Definition
+# SUMIF का use तब करते हैं जब हमें एक condition के आधार पर numbers को जोड़ना (Sum) हो।
+
+# Syntax
+# =SUMIF(range, criteria, sum_range)
+
+# Example
+# Sales department की total sales निकालनी है:
+
+# =SUMIF(B2:B7,"Sales",D2:D7)
+
+
+# 2. SUMIFS
+# 📌 Definition
+# SUMIFS का use तब करते हैं जब हमें एक से ज्यादा conditions के आधार पर numbers को जोड़ना हो।
+
+# Syntax
+# =SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2)
+
+# Example
+# Agra में Sales department की total sales:
+
+# =SUMIFS(D2:D7,B2:B7,"Sales",C2:C7,"Agra")
+
+# DIFF B/W SUM, SUMIF & SUMIFS
+# SUM	❌ No condition	Sabhi numbers ko जोड़ता है	
+# SUMIF	🟢 1 condition	Ek condition ke basis par जोड़ता है	
+# SUMIFS  🟢🟢 Multiple conditions	Multiple conditions ke basis par जोड़ता है
+
+
+# 3. COUNTIF
+# 📌 Definition
+# COUNTIF का use तब करते हैं जब हमें एक condition को पूरा करने वाली cells/entries की संख्या गिननी हो।
+
+# Syntax
+# =COUNTIF(range, criteria)
+
+# Example
+# Sales department में कितने employees हैं?
+
+# =COUNTIF(B2:B7,"Sales")
+
+# 4. COUNTIFS
+# 📌 Definition
+# COUNTIFS का use तब करते हैं जब हमें एक से ज्यादा conditions को पूरा करने वाली entries की संख्या गिननी हो।
+
+# Syntax
+# =COUNTIFS(criteria_range1,criteria1,criteria_range2,criteria2)
+
+# Example
+# Agra में Sales department के कितने employees हैं?
+
+# =COUNTIFS(B2:B7,"Sales",C2:C7,"Agra")
+
+# DIFF B/W COUNT, COUNTIF, COUNTIFS
+
+# COUNT numbers को बिना किसी condition के count करता है।
+# COUNTIF एक condition के आधार पर count करता है।
+# COUNTIFS multiple conditions के आधार पर count करता है।
+
+# 5. AVERAGEIF
+# 📌 Definition
+# AVERAGEIF का use तब करते हैं जब हमें एक condition के आधार पर numbers का average निकालना हो।
+
+# Syntax
+# =AVERAGEIF(range, criteria, average_range)
+
+# Example
+# Sales department की average sales:
+
+# =AVERAGEIF(B2:B7,"Sales",D2:D7)
+
+
+# 6. AVERAGEIFS
+# 📌 Definition
+# AVERAGEIFS का use तब करते हैं जब हमें एक से ज्यादा conditions के आधार पर average निकालना हो।
+
+# Syntax
+# =AVERAGEIFS(average_range, criteria_range1, criteria1, criteria_range2, criteria2)
+
+# Example
+# Agra में Sales department की average sales:
+
+# =AVERAGEIFS(D2:D7,B2:B7,"Sales",C2:C7,"Agra")
+
+# DIFF B/W AVG, AVGIF, AVGIFS
+
+# AVERAGE → सबका Average
+# AVERAGEIF → एक condition लगाकर Average
+# AVERAGEIFS → कई conditions लगाकर Average
